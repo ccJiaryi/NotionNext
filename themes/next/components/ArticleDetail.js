@@ -87,8 +87,8 @@ export default function ArticleDetail(props) {
                     {/* 分享 */}
                     <ShareBar post={post} />
 
-                    // {/* 版权声明 */}
-                    // {post?.type === 'Post' && <ArticleCopyright author={BLOG.AUTHOR} url={url} />}
+                    {/* 版权声明 */}
+                    {post?.type === 'Post' && <ArticleCopyright author={BLOG.AUTHOR} url={url} />}
 
                     {/* 推荐文章 */}
                     {post?.type === 'Post' && <RecommendPosts currentPost={post} recommendPosts={recommendPosts} />}
